@@ -213,7 +213,7 @@ After downloading, extract the compressed files:
 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/dc7a1bcc-ac36-4c93-8585-d7d4f554557d" alt="AFF Info Output" />
+  <img src="https://github.com/user-attachments/assets/967f3ffc-fc6e-4804-8262-b1fecd1f75bc" alt="AFF Info Output" />
 </p>
 
 ### 3. Apply Commands
@@ -223,19 +223,44 @@ Now, apply the necessary commands to the extracted files:
 - **View Content of .txt File**:
 
     ```bash
+    cat HRServer_Disk0.txt
     ```
 
 <br>
 <br>
 <p align="center">
-  <img src="" alt="AFF Info Output" />
+  <img src="https://github.com/user-attachments/assets/7188fc14-8c52-422b-9973-db3013d18b39" alt="AFF Info Output" />
 </p>
 <br>
 <br>
 
+- **Generate MD5 Hash**:
+   Calculates the MD5 hash of the image file to verify its integrity
 
+    ```bash
+    md5sum HRServer_Disk0.e01
+    ```
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7188fc14-8c52-422b-9973-db3013d18b39" alt="AFF Info Output" />
+</p>
+<br>
+<br>
 
+- **Generate SHA1 Hash**:
+   Calculates the SHA1 hash of the image file for additional integrity verification
 
+    ```bash
+    sha1sum HRServer_Disk0.e01
+    ```
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7188fc14-8c52-422b-9973-db3013d18b39" alt="AFF Info Output" />
+</p>
+<br>
+<br>
 
 ---
 
