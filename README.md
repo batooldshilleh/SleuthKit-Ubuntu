@@ -166,17 +166,12 @@ This directory will store all the downloaded files and the results of applied co
 Download the necessary files using the commands below:
 
 ```bash
-wget https://linuxleo.com/Files/gptimage.raw.gz
-wget https://dftt.sourceforge.net/test10/index.html
-wget https://linuxleo.com/Files/able2.tar.gz
-wget https://digitalcorpora.s3.amazonaws.com/corpora/drives/nps-2009-ntfs1/ntfs1-gen1.aff
+wget https://www.dropbox.com/s/1q4f0fowo8048mq/Image1.7z?dl=0
+
 ```
 or 
 ```bash
-curl -O https://linuxleo.com/Files/gptimage.raw.gz
-curl -O https://dftt.sourceforge.net/test10/index.html
-curl -O https://linuxleo.com/Files/able2.tar.gz
-curl -O https://digitalcorpora.s3.amazonaws.com/corpora/drives/nps-2009-ntfs1/ntfs1-gen1.aff
+curl -O https://www.dropbox.com/s/1q4f0fowo8048mq/Image1.7z?dl=0
 ```
 **Note** :
 ### Difference between `wget` and `curl`:
@@ -199,40 +194,21 @@ curl -O https://digitalcorpora.s3.amazonaws.com/corpora/drives/nps-2009-ntfs1/nt
 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d147db9c-997d-4932-b182-061e2a74c490" alt="AFF Info Output" />
+  <img src="https://github.com/user-attachments/assets/440498f0-2855-4181-8293-ecc36c80170c" alt="AFF Info Output" />
 </p>
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/8d221922-6dcf-471d-b8fd-34a6bba3311e" alt="AFF Info Output" />
-</p>
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/06811447-34f6-452e-8bdb-a70424f32329" alt="AFF Info Output" />
-</p>
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/984a1c3c-776d-4732-a3a1-faa0d19246b4" alt="AFF Info Output" />
-</p>
-<br>
 
 ### 2. Extract Files
 
 After downloading, extract the compressed files:
 
 ```bash
-# Extract .gz file
-gzip -d gptimage.raw.gz
-
-# Extract .tar.gz file
-tar -xzvf able2.tar.gz
+# Extract .7z file
+7z x Image1.7z
 ```
 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/afd4df9c-4fea-463d-907c-6ffe73f5f305" alt="AFF Info Output" />
+  <img src="https://github.com/user-attachments/assets/dc7a1bcc-ac36-4c93-8585-d7d4f554557d" alt="AFF Info Output" />
 </p>
 <br>
 
@@ -294,166 +270,6 @@ __**10-ntfs-disk.dd**__
 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3ee9730f-a83f-4956-8605-d4a47b9f5f63" alt="AFF Info Output" />
-</p>
-<br>
-<br>
-
-__**gptimage.raw.gz**__
-
-- **To list the partitions on an NTFS disk image:`**:
-
-    ```bash
-    # back to main dir
-    cd .. / ..
-    ls
-    mmls gptimage.raw.gz
-    ```
-
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/0a9edf3f-1402-47a3-9cc7-b2b5a9d837d0" alt="AFF Info Output" />
-</p>
-<br>
-<br>
-
-- **To get the statistics of a disk image:**
-
-    ```bash
-    img_stat gptimage.raw
-    ```
-
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/70baf6a2-4746-4f2a-9b59-7bdbbe16a094" alt="AFF Info Output" />
-</p>
-<br>
-<br>
-
-- **To display the metadata statistics of a disk image**:
-
-    ```bash
-   mmstat gptimage.raw
-    ```
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/24b95f3e-0113-4962-b64c-691e3802e926" alt="AFF Info Output" />
-</p>
-<br>
-<br>
-
-- **To display file system statistics for a specific offset in an NTFS disk image**
- ```bash
-   fsstat -o 2048 gptimage.raw
- ```
-<br>
-<br>
-<p align="center">
-  
-https://github.com/user-attachments/assets/904da836-42ff-4bd6-938e-a98c1053016f
-
-</p>
-<br>
-<br>
-
-__**able2.dd**__
-- **To list the partitions on an NTFS disk image:`**:
-
-    ```bash
-    ls
-    mmls able2.dd
-    ```
-
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/84de8e25-5b54-4fa2-9a99-289ade8d8915" alt="AFF Info Output" />
-</p>
-<br>
-<br>
-
-- **To get the statistics of a disk image:**
-
-    ```bash
-    img_stat able2.dd
-    ```
-
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/ed8a9fdb-1185-4703-a437-46d47c32db77" alt="AFF Info Output" />
-</p>
-<br>
-<br>
-
-- **To display the metadata statistics of a disk image**:
-
-    ```bash
-   mmstat able2.dd
-    ```
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/b95b7ac9-7490-4002-b5a2-d1a9d3e9c2df" alt="AFF Info Output" />
-</p>
-<br>
-<br>
-
-- **To display file system statistics for a specific offset in an NTFS disk image**
- ```bash
-   fsstat -o 57 able2.dd
- ```
-<br>
-<br>
-<p align="center">
-    
-https://github.com/user-attachments/assets/d67dccca-2c29-4756-af19-66041761350a
-
-</p>
-<br>
-<br>
-
-__**ntfs1-gen1.aff**__
-- **To get the statistics of a disk image:**
-
-    ```bash
-     ls
-    img_stat ntfs1-gen1.aff
-    ```
-
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/0491574a-8da7-4215-9d84-225709ff15ad" alt="AFF Info Output" />
-</p>
-<br>
-<br>
-
-- **To display the metadata statistics of a disk image**:
-
-    ```bash
-   fls -o 0 ntfs1-gen1.aff
-    ```
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/56a59370-c618-41b7-b193-db01d48dc9bd" alt="AFF Info Output" />
-</p>
-<br>
-<br>
-
-- **To display file system statistics for a specific offset in an NTFS disk image**
- ```bash
-   fsstat -o 0 ntfs1-gen1.aff
- ```
-<br>
-<br>
-<p align="center">
-    
-https://github.com/user-attachments/assets/2bb7ce23-60cf-409f-8746-2b18741bd85d
-
 </p>
 <br>
 <br>
