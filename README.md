@@ -323,6 +323,90 @@ https://github.com/user-attachments/assets/a55f085c-ca01-4198-b861-6f5356cdce8b
 </p>
 <br>
 <br>
+
+- **List Inode Entries**:
+   Lists inode entries, showing metadata for each inode in the file system.
+
+    ```bash
+   ils -o 1026048 HRServer_Disk0.e01
+    ```
+<br>
+<br>
+<p align="center">
+
+https://github.com/user-attachments/assets/8ff8e909-874b-4af6-92e5-15fbf8746662
+
+</p>
+<br>
+<br>
+
+
+
+- **Get Inode Metadata**:
+   Lists inode entries, showing metadata for each inode in the file system.
+**Note** : indo number from ils for example `172624`
+    ```bash
+   istat -o 1026048 HRServer_Disk0.e01 172624
+    ```
+<br>
+<br>
+<p align="center">
+
+https://github.com/user-attachments/assets/9d06c963-7bda-45b5-b5a0-76d1a88730b6
+
+</p>
+<br>
+<br>
+
+- **Recover Deleted Files**:
+ Recovers deleted files from the image and saves them to the specified output directory.
+
+    ```bash
+   tsk_recover -o 1026048 HRServer_Disk0.e01  recover
+    ```
+<br>
+<br>
+<p align="center">
+
+<img src="https://github.com/user-attachments/assets/58e14cd5-f6c3-4143-82f7-9187b9e81d19" alt="AFF Info Output" />
+
+</p>
+<br>
+<br>
+
+- **Get Block Statistics**:
+ Provides statistics about a specific block within the image.
+**Note** : block number from ils for example `172624`
+    ```bash
+   blkstat -o 1026048 HRServer_Disk0.e01 172624
+    ```
+<br>
+<br>
+<p align="center">
+
+<img src="https://github.com/user-attachments/assets/dcfc79df-6a49-43a1-9a14-586beb8b606b" alt="AFF Info Output" />
+
+</p>
+<br>
+<br>
+
+- **Extract Raw Block Data**:
+Extracts raw block data from the image and saves it to the specified output directory.
+
+    ```bash
+  blkls -o 1026048 HRServer_Disk0.e01 
+
+    ```
+<br>
+<br>
+<p align="center">
+
+<img src="https://github.com/user-attachments/assets/ec36c2cf-f9a5-4c6e-86aa-1580def4bb5b" alt="AFF Info Output" />
+
+</p>
+<br>
+<br>
+
 ---
 
 ## 📚 Resources
