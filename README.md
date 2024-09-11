@@ -146,13 +146,14 @@ First, create a dedicated directory for this project:
 ```bash
 cd Documents/
 cd GitHub/
-mkdir image-commands-project
-cd image-commands-project
+git clone https://github.com/batooldshilleh/SleuthKit-Ubuntu.git
+ls
+cd SleuthKit-Ubuntu/
 ```
 
 This directory will store all the downloaded files and the results of applied commands.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1aae89f8-2eff-4663-9d01-beb575554993" alt="AFF Info Output" />
+  <img src="https://github.com/user-attachments/assets/0bcc5e25-0f34-43fd-aa44-c38cf4b31ca4" alt="AFF Info Output" />
 </p>
 
 
