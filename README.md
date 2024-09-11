@@ -211,68 +211,31 @@ After downloading, extract the compressed files:
   <img src="https://github.com/user-attachments/assets/dc7a1bcc-ac36-4c93-8585-d7d4f554557d" alt="AFF Info Output" />
 </p>
 <br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dc7a1bcc-ac36-4c93-8585-d7d4f554557d" alt="AFF Info Output" />
+</p>
 
 ### 3. Apply Commands
 
 Now, apply the necessary commands to the extracted files:
-<br>
-__**10-ntfs-disk.dd**__
-- **To list the partitions on an NTFS disk image:`**:
+
+- **View Content of .txt File**:
 
     ```bash
-    cd 10b-ntfs-autodetect/
-    ls
-    cd 10b-ntfs-autodetect/
-    mmls 10-ntfs-disk.dd
     ```
 
 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/03f8552b-83dd-4f64-a639-f580ff1cf951" alt="AFF Info Output" />
+  <img src="" alt="AFF Info Output" />
 </p>
 <br>
 <br>
 
 
-- **To get the statistics of a disk image:**
 
-    ```bash
-    img_stat 10-ntfs-disk.dd
-    ```
 
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/7c77a4c2-0ab1-4f19-ac0d-0ec3c44683e7" alt="AFF Info Output" />
-</p>
-<br>
-<br>
-
-- **To display the metadata statistics of a disk image**:
-
-    ```bash
-   mmstat 10-ntfs-disk.dd
-    ```
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/71fbcd82-1dcd-4e86-9ad2-26d628d61089" alt="AFF Info Output" />
-</p>
-<br>
-<br>
-
-- **To display file system statistics for a specific offset in an NTFS disk image**
- ```bash
-   fsstat -o 63 -f ntfs 10-ntfs-disk.dd
- ```
-<br>
-<br>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/3ee9730f-a83f-4956-8605-d4a47b9f5f63" alt="AFF Info Output" />
-</p>
-<br>
-<br>
 
 ---
 
