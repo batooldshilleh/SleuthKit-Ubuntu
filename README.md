@@ -240,7 +240,7 @@ Now, apply the necessary commands to the extracted files:
 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7188fc14-8c52-422b-9973-db3013d18b39" alt="AFF Info Output" />
+  <img src="https://github.com/user-attachments/assets/e4aa3cf3-828a-440d-a00c-661910d30f9c" alt="AFF Info Output" />
 </p>
 <br>
 <br>
@@ -255,13 +255,14 @@ Now, apply the necessary commands to the extracted files:
 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/7188fc14-8c52-422b-9973-db3013d18b39" alt="AFF Info Output" />
+  <img src="https://github.com/user-attachments/assets/6b44a654-36cc-463f-b359-f8390562e614" alt="AFF Info Output" />
 </p>
 <br>
 <br>
 
-- **Get Image Statistics**:
-   Provides detailed statistics about the image file, such as size and format.
+- **Get MMLS (Media Management Layer Statistics)**:
+   Lists the partitions and their details within the image file.
+   
 
     ```bash
     mmls HRServer_Disk0.e01 
@@ -276,20 +277,52 @@ Now, apply the necessary commands to the extracted files:
 
  **Note** : from image the offset `0001026048`
 
-- **Get MMLS (Media Management Layer Statistics)**:
-   Lists the partitions and their details within the image file.
+
+- **Get Image Statistics**:
+   Provides detailed statistics about the image file, such as size and format.
 
     ```bash
-    mmls HRServer_Disk0.e01 
+    img_stat HRServer_Disk0.e01
     ```
 <br>
 <br>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/88bc9823-59f0-4664-9c25-b3c0159cc1ef" alt="AFF Info Output" />
+  <img src="https://github.com/user-attachments/assets/02d03b74-99c5-4ee3-88bb-d5f254df469b" alt="AFF Info Output" />
 </p>
 <br>
 <br>
 
+- **Get File System Statistics**:
+  Displays file system details, including the type and size of the file system.10
+
+    ```bash
+    fsstat -o 1026048 HRServer_Disk0.e01
+    ```
+<br>
+<br>
+<p align="center">
+
+https://github.com/user-attachments/assets/c5e0db33-12c4-4c54-bc15-db65d7db6d81
+
+</p>
+<br>
+<br>
+
+- **List File and Directory Names**:
+   Lists files and directories within the file system, showing their metadata.
+
+    ```bash
+    fls -o 1026048 HRServer_Disk0.e01
+    ```
+<br>
+<br>
+<p align="center">
+
+https://github.com/user-attachments/assets/a55f085c-ca01-4198-b861-6f5356cdce8b
+
+</p>
+<br>
+<br>
 ---
 
 ## 📚 Resources
