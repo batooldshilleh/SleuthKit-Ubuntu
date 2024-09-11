@@ -158,7 +158,7 @@ This directory will store all the downloaded files and the results of applied co
 
 
 ---
-<!--
+
 ## 📝 Steps
 
 ### 1. Download Required Files
@@ -459,8 +459,14 @@ https://github.com/user-attachments/assets/2bb7ce23-60cf-409f-8746-2b18741bd85d
 <br>
 
 ---
--->
+
 ## 📚 Resources
-- [AFFLIBv3 GitHub Repository](https://github.com/sshock/AFFLIBv3)
-- [Sleuthkit GitHub Repository](https://github.com/sleuthkit/sleuthkit)
+- [Sleuth Kit Documentation](https://www.sleuthkit.org/sleuthkit/docs.php) - Official documentation for Sleuth Kit tools used for forensic analysis.
+- [Linux Commands Reference](https://man7.org/linux/man-pages/) - Linux command manual for executing commands in the terminal.
+- [7-Zip](https://www.7-zip.org/) - Tool used to extract the compressed image file.
+- [Dropbox](https://www.dropbox.com/) - Platform used to download the forensic image.
+- [Digital Forensics Wiki](https://forensicswiki.xyz/) - A community-driven resource for digital forensics information and best practices.
+- [MD5 Hash Calculator](https://emn178.github.io/online-tools/md5_checksum.html) - Online tool to verify MD5 hashes.
+- [SHA1 Hash Calculator](https://emn178.github.io/online-tools/sha1_checksum.html) - Online tool to verify SHA1 hashes.
+
 
