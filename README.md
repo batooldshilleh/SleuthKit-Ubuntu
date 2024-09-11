@@ -16,10 +16,7 @@
   - [1. Download Required Files](#1-download-required-files)
   - [2. Extract Files](#2-extract-files)
   - [3. Apply Commands](#3-apply-commands)
-  - [4. Verify Results](#4-verify-results)
-- [Expected Output](#-expected-output)
 - [Resources](#-resources)
-- [Notes](#-notes)
 
 ---
 
@@ -248,6 +245,7 @@ Now, apply the necessary commands to the extracted files:
 <br>
 <br>
 
+
 - **Generate SHA1 Hash**:
    Calculates the SHA1 hash of the image file for additional integrity verification
 
@@ -258,6 +256,36 @@ Now, apply the necessary commands to the extracted files:
 <br>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7188fc14-8c52-422b-9973-db3013d18b39" alt="AFF Info Output" />
+</p>
+<br>
+<br>
+
+- **Get Image Statistics**:
+   Provides detailed statistics about the image file, such as size and format.
+
+    ```bash
+    mmls HRServer_Disk0.e01 
+    ```
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/88bc9823-59f0-4664-9c25-b3c0159cc1ef" alt="AFF Info Output" />
+</p>
+<br>
+<br>
+
+ **Note** : from image the offset `0001026048`
+
+- **Get MMLS (Media Management Layer Statistics)**:
+   Lists the partitions and their details within the image file.
+
+    ```bash
+    mmls HRServer_Disk0.e01 
+    ```
+<br>
+<br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/88bc9823-59f0-4664-9c25-b3c0159cc1ef" alt="AFF Info Output" />
 </p>
 <br>
 <br>
